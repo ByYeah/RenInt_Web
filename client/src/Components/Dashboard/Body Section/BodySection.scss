@@ -1,0 +1,45 @@
+.mainContent{
+    width: 82%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+
+    .bottom{
+        margin-top: 2rem;
+        gap: 4.5rem;
+        align-items: flex-start;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .mainContent{
+        width: 82%;
+        height: 100%;
+        padding: 2rem;
+        overflow: auto;
+    
+        .bottom{
+            margin-top: 1rem;
+            gap: 5rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .mainContent{
+        width: 82%;
+        height: 100%;
+        padding: 2rem;
+        overflow: auto;
+    
+        .bottom{
+            margin-top: 1rem;
+            gap: 5rem;
+            display: grid;
+            align-items: center;
+        }
+    }
+}

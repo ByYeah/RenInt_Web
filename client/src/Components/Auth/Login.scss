@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Roboto:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+//*Sytlos
+
+.return {
+    height: 8vh;
+    background: rgb(236,244,244);
+    padding: 8px;
+    font-size: 18px;
+
+    .btn{
+        background: none;
+        color: black;
+        margin-left: 8px;
+        gap: 1rem;
+        transition: .3s ease;
+
+        &:hover{
+            background: white;
+        }
+}
+}
+
+.loginPage, .registerPage{
+    height: 92vh;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-image: url(../../Assets/Login/wallpaper.png);
+    background-size: cover;
+
+    .container {
+        height: 75vh;
+        border-color: rgb(124, 124, 124);
+        border-style: solid;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+        border-radius: 10px;
+        background: hsl(333, 60%, 97%);
+
+
+        .videoDiv {
+            position: relative;
+            display: flex;
+            flex-basis: 50%;
+            width: 70%;
+            height: 100%;
+            padding: 0 1.5rem;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+
+            Video,.footerDiv {
+                position: absolute;
+            }
+
+            Video {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .textDiv {
+                position: relative;
+
+                .title {
+                    color: rgb(39, 39, 39);
+                    font-size: 35px;
+                    font-weight: 800;
+                }
+
+                p {
+                    color: rgb(0, 0, 0);
+                    padding: 1rem;
+                    font-weight: 400;
+                    background-color: rgba(255, 255, 255, 0.712);
+                    backdrop-filter: blur(1px);
+                    border-radius: 10px;
+                }
+
+            }
+
+            .footerDiv{
+                bottom: 10px;
+                padding: 0 1rem;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.248);
+                left: 10px;
+                right: 10px;
+                justify-content: space-between;
+                backdrop-filter: blur(1px);
+                border-radius: 10px;
+
+                .text{
+                    color: rgb(0, 0, 0);
+                }
+
+                .btn{
+                    background: rgb(255, 255, 255);
+                    color: rgba(76, 28, 148, 0.829);
+                    padding: .8rem 1.5rem;
+                    border-radius: 10px;
+                    font-weight: 400;
+                    transition: .3s ease;
+
+                    &:hover{
+                        background: rgb(63, 6, 110);
+                        color: whitesmoke;
+                    }
+                }
+            }
+
+        }
+
+        .formDiv{
+            flex-basis: 50%;
+            margin: auto;
+            flex-direction: column;
+            gap: 1.5rem;
+            transform: translateY(-1rem);
+
+            .headerDiv {
+                text-align: center;
+                padding: 1.5rem 0;
+
+                h3 {
+                    font-size: 25px;
+                    color: rgb(0, 0, 0);
+                    font-weight: 600;
+                }
+            }
+
+            .form{
+                gap: 1rem;
+
+                .subtitle{
+                    text-align: center;
+                }
+
+                .inputDiv{
+
+                    .icon{
+                        color:rgba(76, 28, 148, 0.829);
+                    }
+
+                    input{
+                        background: none;
+                        outline: none;
+                        border: none;
+                        width: 200px;
+                    }
+
+                    label{
+                        color: black;
+                        font-weight: 400;
+                        font-size: 14px;
+                        padding: .5rem 0;
+                        display: block; 
+                    }
+
+                    .input{
+                        gap: .5rem;
+                        border: 2px solid;  
+                        padding: 1rem;
+                        background: hsl(330, 12%, 97%);
+                        border-radius: 10px;
+                    }
+                }
+
+                .btn{
+                    padding: .8rem;
+                    background: rgb(156, 61, 197);
+                    border-radius: 10px;
+                    color: white;
+                    align-items: center;
+                    margin: auto;
+                    justify-content: center;
+                    font-size: 16px;
+                    width: 50%;
+                    gap: .5rem;
+                    transform: .3s ease;
+                    
+
+                    .icon{
+                        font-size: 25px;
+                        transition: .3s ease;
+                    }
+
+                    &:hover{
+                        background: rgb(203, 113, 241);
+                        color: black;
+
+                        .icon{
+                            color: black;
+                            transform: translateX(5px);
+                        }
+                    }
+                }  
+                
+                .forgotPassword {
+                    font-size: 13px;
+                    color: black;
+                    opacity: .7;
+                    text-align: center;
+
+                    a{
+                        text-decoration: underline;
+                        cursor: pointer;
+                        opacity: 1;
+                    }
+                }
+                
+            }
+        }
+    }
+}

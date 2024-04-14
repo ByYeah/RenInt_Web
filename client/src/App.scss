@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Roboto:wght@300;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*Styles*/
+
+:root {
+    --primaryColor: rgb(156, 61, 197);
+    --hoverColor: rgb(203, 113, 241);
+    --paleGrenn: rgb(241, 209, 253);
+    --whiteColor: rgb(255, 255, 255);
+    --blackColor: rgb(0, 0, 0);
+    --grayText: hsl(0, 0%, 75%);
+    --bgColor: hsl(113, 11%, 85%);
+    --inputColor: hsl(330, 12%, 97%);
+    --inputColor: hsl(154, 14%, 90%);
+
+    /*Font and typography*/
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSiza: .75rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+html {
+    font-size: 90%;
+}
+
+
+li {
+    list-style: none;
+}
+
+.icon {
+    font-size: var(--h2FontSize);
+    cursor: pointer;
+}
+
+video {
+    height: auto;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    width: 60%;
+}
+
+.message {
+    display: none;
+}
+
+.showMessage {
+    display: block;
+    padding: 8px;
+    color: var(--whiteColor);
+    background: rgb(228, 48, 48);
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    color: var(--whiteColor);
+    background: rgba(76, 28, 148, 0.829);
+}
+
+.btn .icon {
+    margin-left: .5rem;
+}
+
+.btn:hover {
+    color: var(--primaryColor);
+    background: rgb(63, 6, 110);
+}
+
+//* App style home
+
+.shadow-md {
+    z-index: 9999;
+}
+
+
+.homeContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 5.2rem;
+    overflow: hidden;
+    gap: 4rem;
+
+    .videoDiv {
+        position: relative;
+        display: grid;
+        flex-basis: 65%;
+        width: 50%;
+        height: 75vh;
+        padding: auto;
+        text-align: center;
+        justify-content: center;
+        margin-top: 6.5vh;
+        margin-left: 5vh;
+        margin-bottom: 8vh;
+        overflow: hidden;
+        border-radius: 3rem;
+
+
+        .subtle {
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            background: rgba(255, 255, 255, 0.248);
+            backdrop-filter: blur(1px);
+        }
+
+        Video {
+            height: 65vh;
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+
+}
+
+.w-96 {
+    gap: 5rem;
+}

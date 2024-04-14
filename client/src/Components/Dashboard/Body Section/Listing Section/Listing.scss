@@ -1,0 +1,392 @@
+:root {
+    --primaryColor: rgb(76, 28, 148);
+    --hoverColor: rgb(63, 6, 110);
+    --paleGrenn: rgb(76, 28, 148);
+    --whiteColor: rgb(196, 196, 196);
+    --blackColor: rgb(0, 0, 0);
+    --grayText: hsl(0, 0%, 75%);
+    --bgColor: hsla(268, 96%, 35%, 0.103);
+    --inputColor: hsl(330, 12%, 97%);
+    --inputColor: hsl(0, 0%, 92%);
+    --itemCardColor: hsl(260, 5%, 88%);
+    --itemCardHover: hsl(273, 13%, 86%);
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSiza: .75rem;
+    --textColor: #1f2937;
+}
+
+.listingSection {
+    margin-top: 4.5rem;
+    flex-basis: 70%;
+
+    .heading {
+        width: 100%;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+
+        h1 {
+            font-size: var(--h2FontSize);
+            color: var(--textColor);
+            font-weight: 700;
+
+            ion-icon {
+                --ionicon-stroke-width: 50px;
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: .8rem;
+                box-shadow: none;
+                padding: .8rem 1.5rem;
+                color: whitesmoke;
+                background: rgba(76, 28, 148, 0.801);
+                border-radius: 2px solid transparent;
+                -webkit-border-radius: 2px solid transparent;
+                -moz-border-radius: 2px solid transparent;
+                -ms-border-radius: 2px solid transparent;
+                -o-border-radius: 2px solid transparent;
+            }
+
+            .transparent {
+                background: none;
+                border: 2px solid var(--paleGrenn);
+                color: black;
+
+                &:hover {
+                    background: var(--paleGrenn);
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+
+    .secContainer {
+        width: 95%;
+        margin: 1rem 0;
+        gap: .6rem;
+        padding-left: 4rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .singleItem {
+            position: relative;
+            width: 13rem;
+            height: 16rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 10px;
+            background: var(--itemCardColor);
+
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+
+            .doc {
+                width: 110px;
+                height: 150px;
+                margin-bottom: .5rem;
+                border-radius: 10px;
+
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+            .mas {
+                width: 60px;
+                height: 60px;
+                margin-top: 4.5rem;
+                margin-bottom: .5rem;
+                border-radius: 10px;
+
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+
+
+            ion-icon {
+                color: #4c1d95;
+                --ionicon-stroke-width: 50px;
+                font-size: 22px;
+                margin: 1px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+
+            }
+
+            h3 {
+                font-size: 1rem;
+                font-weight: 500;
+                color: var(--hoverColor);
+            }
+
+            &:hover {
+                background: var(--itemCardHover);
+                box-shadow: 0 2px 2px var(--inputColor);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .listingSection {
+        margin-top: 4.5rem;
+        flex-basis: 70%;
+    
+        .heading {
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 3rem;
+    
+            h1 {
+                font-size: var(--h2FontSize);
+                color: var(--textColor);
+                font-weight: 700;
+    
+                ion-icon {
+                    --ionicon-stroke-width: 50px;
+                    font-size: 18px;
+                }
+    
+                .btn {
+                    font-size: .8rem;
+                    box-shadow: none;
+                    padding: .8rem 1.5rem;
+                    color: whitesmoke;
+                    background: rgba(76, 28, 148, 0.801);
+                    border-radius: 2px solid transparent;
+                    -webkit-border-radius: 2px solid transparent;
+                    -moz-border-radius: 2px solid transparent;
+                    -ms-border-radius: 2px solid transparent;
+                    -o-border-radius: 2px solid transparent;
+                }
+    
+                .transparent {
+                    background: none;
+                    border: 2px solid var(--paleGrenn);
+                    color: black;
+    
+                    &:hover {
+                        background: var(--paleGrenn);
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+    
+        .secContainer {
+            width: 90%;
+            margin: 1rem 0;
+            gap: .6rem;
+            padding-left: 1rem;
+            flex-wrap: nowrap;
+            row-gap: 1rem;
+            display: flex;
+            flex-direction: row;
+
+    
+            .singleItem {
+                position: relative;
+                width: 13rem;
+                height: 16rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 5rem;
+                border-radius: 10px;
+                background: var(--itemCardColor);
+    
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+
+
+    
+                .doc {
+                    width: 110px;
+                    height: 150px;
+                    margin-bottom: .5rem;
+                    border-radius: 10px;
+    
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+    
+                .mas {
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 4.5rem;
+                    margin-bottom: .5rem;
+                    border-radius: 10px;
+    
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+    
+    
+                ion-icon {
+                    color: #4c1d95;
+                    --ionicon-stroke-width: 50px;
+                    font-size: 22px;
+                    margin: 1px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+    
+                }
+    
+                h3 {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: var(--hoverColor);
+                }
+    
+                &:hover {
+                    background: var(--itemCardHover);
+                    box-shadow: 0 2px 2px var(--inputColor);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .listingSection {
+        margin-top: 4.5rem;
+        flex-basis: 70%;
+    
+        .heading {
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 3rem;
+    
+            h1 {
+                font-size: var(--h2FontSize);
+                color: var(--textColor);
+                font-weight: 700;
+    
+                ion-icon {
+                    --ionicon-stroke-width: 50px;
+                    font-size: 18px;
+                }
+    
+                .btn {
+                    font-size: .8rem;
+                    box-shadow: none;
+                    padding: .8rem 1.5rem;
+                    color: whitesmoke;
+                    background: rgba(76, 28, 148, 0.801);
+                    border-radius: 2px solid transparent;
+                    -webkit-border-radius: 2px solid transparent;
+                    -moz-border-radius: 2px solid transparent;
+                    -ms-border-radius: 2px solid transparent;
+                    -o-border-radius: 2px solid transparent;
+                }
+    
+                .transparent {
+                    background: none;
+                    border: 2px solid var(--paleGrenn);
+                    color: black;
+    
+                    &:hover {
+                        background: var(--paleGrenn);
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+    
+        .secContainer {
+            width: 95%;
+            margin: 1rem 0;
+            gap: .6rem;
+            padding-left: 4rem;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+    
+            .singleItem {
+                position: relative;
+                width: 13rem;
+                height: 16rem;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 1rem;
+                border-radius: 10px;
+                background: var(--itemCardColor);
+    
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+    
+                .doc {
+                    width: 110px;
+                    height: 150px;
+                    margin-bottom: .5rem;
+                    border-radius: 10px;
+    
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+    
+                .mas {
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 4.5rem;
+                    margin-bottom: .5rem;
+                    border-radius: 10px;
+    
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                }
+    
+    
+                ion-icon {
+                    color: #4c1d95;
+                    --ionicon-stroke-width: 50px;
+                    font-size: 22px;
+                    margin: 1px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+    
+                }
+    
+                h3 {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: var(--hoverColor);
+                }
+    
+                &:hover {
+                    background: var(--itemCardHover);
+                    box-shadow: 0 2px 2px var(--inputColor);
+                }
+            }
+        }
+    }
+}

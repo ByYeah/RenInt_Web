@@ -1,0 +1,84 @@
+:root {
+  --primaryColor: rgb(76,28,148);
+  --hoverColor: rgb(63, 6, 110);
+  --paleGrenn: rgb(76,28,148);
+  --whiteColor: rgb(196, 196, 196);
+  --blackColor: rgb(0, 0, 0);
+  --grayText: hsl(0, 0%, 75%);
+  --bgColor: hsla(268, 96%, 35%, 0.103);
+  --inputColor: hsl(330, 12%, 97%);
+  --inputColor: hsl(154, 14%, 90%);
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: .938rem;
+  --smallFontSize: .813rem;
+  --smallestFontSiza: .75rem;
+  --textColor: #1f2937;
+}
+
+.activitySection {
+  flex-basis: 34%;
+  margin-top: 3.5rem;
+}
+.activitySection .heading {
+  width: 100%;
+  padding-top: 1.5rem;
+}
+.activitySection .heading h1 {
+  font-size: var(--h2FontSize);
+  color: var(--textColor);
+  font-weight: 700;
+}
+.activitySection .heading h1 ion-icon {
+  --ionicon-stroke-width: 50px;
+  font-size: 18px;
+}
+.activitySection .cardCalendar {
+  padding-top: 2.5rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .activitySection {
+    flex-basis: 100%;
+  }
+  .activitySection .heading {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .activitySection .heading h1 {
+    font-size: var(--h2FontSize);
+    color: var(--textColor);
+    font-weight: 700;
+  }
+  .activitySection .heading h1 ion-icon {
+    --ionicon-stroke-width: 50px;
+    font-size: 18px;
+  }
+  .activitySection .cardCalendar {
+    padding-top: 2.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .activitySection {
+    flex-basis: 100%;
+    margin-top: 20rem;
+  }
+  .activitySection .heading {
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .activitySection .heading h1 {
+    font-size: var(--h2FontSize);
+    color: var(--textColor);
+    font-weight: 700;
+  }
+  .activitySection .heading h1 ion-icon {
+    --ionicon-stroke-width: 50px;
+    font-size: 18px;
+  }
+  .activitySection .cardCalendar {
+    padding-top: 2.5rem;
+  }
+}/*# sourceMappingURL=Activity.css.map */
